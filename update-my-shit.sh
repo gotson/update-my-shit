@@ -15,6 +15,7 @@ run(){
 run "brew update" "brew-update.log"
 run "brew upgrade" "brew-upgrade.log"
 run "brew cleanup" "brew-cleanup.log"
+run "brew cask upgrade" "cask-upgrade.log"
 run "npm -g update" "npm-update.log"
 run "pip3 list --outdated" "pip-update.log"
 run "pip3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U" "pip-update.log"
